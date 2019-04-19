@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is about using Ruby on Rails with GraphQL API's. I have used Clearance gem for authorization and authentication. This is a boilerplate where you can clone this repo and start your project.
 
-Things you may want to cover:
+* Ruby version 2.5.1
+* Rails version 5.2.3
 
-* Ruby version
+# How to run this project:
 
-* System dependencies
+* Git clone <repo>
+* Install bundler
+* Start Rails server
+* localhost:3000/sign_up for register new user.
+* localhost:3000/graphiql for use of graphql queries.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
