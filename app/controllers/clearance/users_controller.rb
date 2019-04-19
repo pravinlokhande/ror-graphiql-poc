@@ -14,7 +14,6 @@ class Clearance::UsersController < Clearance::BaseController
 
   def create
     @user = user_from_params
-    byebug
     if @user.save
       sign_in @user
       redirect_back_or url_after_create
@@ -36,7 +35,6 @@ class Clearance::UsersController < Clearance::BaseController
   end
 
   def user_from_params
-    byebug
     email = user_params.delete(:email)
     password = user_params.delete(:password)
     first_name = user_params.delete(:first_name)
@@ -51,7 +49,6 @@ class Clearance::UsersController < Clearance::BaseController
   end
 
   def user_params
-    byebug
     params[Clearance.configuration.user_parameter] || Hash.new
   end
 end
