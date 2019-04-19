@@ -33,6 +33,10 @@ gem 'graphql', '~> 1.9', '>= 1.9.4'
 gem 'has_secure_token'
 gem 'graphiql-rails', '~> 1.7'
 
+# Bootstrap is dependent on JQuery
+gem 'bootstrap'
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

@@ -1,0 +1,39 @@
+<div id="clearance" class="sign-up">
+  <h2>User List</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>
+          Id
+        </td> 
+        <td>
+          First Name
+        </td>
+        <td>
+          Last Name
+        </td>
+        <td>
+          Email
+        </td>
+      </tr>  
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr class="">
+          <td>
+            <%= user.id %>
+          </td> 
+          <td>
+            <%= user.first_name %>
+          </td>
+          <td>
+            <%= user.last_name %>
+          </td>
+          <td>
+            <%= user.email %>
+          </td>
+        </tr>  
+      <% end %>
+    </tbody>
+  </table>
+</div>
