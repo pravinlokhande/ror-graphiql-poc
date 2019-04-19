@@ -1,5 +1,5 @@
 class GraphqlsController < ApplicationController
-  before_action :authenticate_by_api_token!
+  # before_action :authenticate_by_confirmation_token!
 
   def create
     query_string = params[:query]
